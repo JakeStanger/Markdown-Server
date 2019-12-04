@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://f.jstanger.dev/.res/github-markdown.css">
+    <link rel="stylesheet" href="https://f.jstanger.dev/.res/md-template.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="links">
+      <a class="link" href=".">Up</a>
+      {{#each files}}
+        <a class="link" href="./{{this.path}}">{{this.title}}</a>
+      {{/each}}
+    </div>
+    <div class="markdown-body" style="padding:10px;">
+      {{{html}}}
+    </div>
+  </body>
+</html>
